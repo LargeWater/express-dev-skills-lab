@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Domucent</title>
+  <title>Domccunett</title>
 </head>
 <body>
-  <h1>Skills</h1>
+  <h1>Skills as of <%= time %></h1>
   <ul>
     <% skills.forEach(skill => { %>
       <li>
-				<%= skill.text %> 
+				<a href="/skills/<%= skill._id %>"><%= skill.text %></a>
 				- 
 				<%= skill.proficient ? 'pretty good!' : 'pretty good 👍' %>
 			</li>
