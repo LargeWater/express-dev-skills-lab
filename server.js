@@ -4,6 +4,7 @@ import express from 'express'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import logger from 'morgan'
+import MethodOverride from 'method-override'
 import('./config/database.js')
 
 // import routers
@@ -34,6 +35,7 @@ app.use(
     path.join(path.dirname(fileURLToPath(import.meta.url)), 'public')
   )
 )
+app.use(MethodOverride('_method'))
 
 // mounted routers
 app.use('/', indexRouter)
