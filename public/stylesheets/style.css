@@ -17,9 +17,13 @@ a {
 }
 	
 .delete-form button {
-  color: red;
+  color: #73130d;
 }
 	
 li {
   list-style: none;
+}
+button{
+  background-color: #F2F5EA;
+  border: 1px solid #D6DBD2;
 }
